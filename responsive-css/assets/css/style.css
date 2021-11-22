@@ -1,0 +1,265 @@
+/* Responsibility */
+
+@media (min-width: 1281px) {  
+  /* 
+    ##Device = Laptops, Desktops
+  */
+  #my-works .container,
+  #intro .container,
+  #contact .container ,
+  #adress .container,
+  #what-i-do .container,
+  #about .container
+  {
+      width: 100%;
+  }
+  nav{
+    width: 100%;
+ }
+  #adress {
+    height: 20vh;
+    width: 100%;
+}
+#intro {
+    min-width: 100%;
+}
+  #about .content .bio p {
+    display: inline-block;
+}
+#about .title h2::after,
+#what-i-do .container .title h2::after 
+{
+    left: 30px;
+}
+#my-works .container .products .row .col img {
+   width: 100%;
+}
+
+#contact .container{
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ #contact .container form{
+     width: 100%;
+ }
+ #contact #submit-button{
+     left: 250px;
+ }
+ 
+ #contact form .input-with-icon i, #contact .container .row  form .textarea-with-icon i{
+     left: 0px;
+ }
+ #contact .container .row  form .textarea-with-icon textarea{
+    min-width: 100%; 
+ }
+ #adress {
+    min-height: 45vh;
+}
+    
+  }
+  
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+   
+    #my-works .container,
+    #intro .container,
+    #contact .container ,
+    #adress .container,
+    #what-i-do .container,
+    #about .container
+    {
+        width: 100%;
+    }
+    nav{
+        right: 30px;
+    }
+    #contact .container{
+        padding: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #contact .container form{
+        width: 100%;
+    }
+    #contact form .input-with-icon i, #contact .container .row  form .textarea-with-icon i{
+        left: 0px;
+    }
+    #contact .container .row  form .textarea-with-icon textarea{
+       min-width: 100%; 
+    }
+    #adress {
+        min-height: 25vh;
+    }
+  }
+  
+
+  @media (min-width: 768px)  and (max-width: 1024px) {
+   /* 
+   ## For Tablets
+   */
+    #intro .container,
+    #about .container,
+    #what-i-do .container,
+    #my-works .container,
+    #contact .container ,
+    #adress .container
+    {
+        width: 100%;
+    }
+    
+    nav{
+        width: auto;
+        justify-content: flex-start;
+        padding-left: 40px;
+    }
+    
+    #about .container{
+        padding: 20px;
+    }
+   
+    #about .title{
+        text-align: center;
+    }
+    #about .content{
+        display: flex;
+        flex-direction: column;
+    }
+    #about .content .bio {
+        margin:auto 20px;
+    }
+    #about .content .bio .btn-about{
+        margin-bottom: -60px;
+        margin-top: 15px; 
+    }
+    #what-i-do .container{
+        padding: 100px;
+        align-items: center;
+        justify-content: center;
+    }
+    #contact .container{
+        padding: 10px 100px;
+    }
+      #contact .container .row form .input-with-icon input{
+          width: 100%;
+      }
+      #contact .container .row  form .textarea-with-icon textarea{
+        width: 100%; 
+     }
+      #contact #submit-button {
+        left: 33.33%;
+      }
+      #contact .container .row form .textarea-with-icon i, form .input-with-icon i {
+        left: 0;
+      }
+  }
+  
+  @media(max-width: 768px) {
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+  */
+  #intro .container,
+  #about .container,
+  #what-i-do .container,
+  #my-works .container,
+  #contact .container ,
+  #adress .container
+  {
+     width: 100%;
+  }
+  
+  nav{
+    justify-content: flex-start;
+    padding: 10px;
+    width: auto;
+  }
+  nav #menu-btn{
+      position: absolute;
+      display: flex;
+      align-items: center;
+      width: 60px;
+      height: 60px;
+      cursor: pointer;
+      right: 0px;
+  }
+  nav .menu-btn-burger{
+      width: 35px;
+      height: 2px;
+      background: gray;
+      border-radius: 5px;
+      position: relative;
+  }
+  nav .menu-btn-burger::before{
+    width: 35px;
+    height: 2px;
+    background: gray;
+    border-radius: 5px;
+    content: "";
+    position: absolute;
+    bottom: 12px;
+  }
+  nav .menu-btn-burger::after{
+    width: 35px;
+    height: 2px;
+    background: gray;
+    border-radius: 5px;
+    content: "";
+    position: absolute;
+    top: 12px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+  #intro .container{
+    top: 30%;
+  }
+  #intro .container h2{
+    font-size: 20px;
+  }
+  #intro .container h1.typing{
+    font-size: 40px;
+  }
+  #about .content {
+    display: flex;
+    padding-top: 30px;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  #about .content img{
+      max-width: 100%;
+  }
+  #what-i-do .container .row{
+      display: flex;
+      flex-direction: column;
+      min-width: 100%;
+  }
+  #what-i-do .container .row .col{
+      padding: 10px auto;
+      margin-top: 10px;
+  }
+  #what-i-do .container .row .col p{
+      width: 60%;
+  }
+  #my-works .products .row .col img{
+    min-width:400px;
+  }
+  
+  #contact .container .row form .textarea-with-icon i, form .input-with-icon i {
+    left: 5px;
+  }
+  #contact .container .row form .input-with-icon input{
+      min-width: 100%;
+  }
+  #contact .container .row  form .textarea-with-icon textarea{
+    min-width: 100%; 
+ }
+  #contact #submit-button {
+    left: 33.33%;
+  }
+    
+}
+  /* Responsibility css ends */
